@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poetsen+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navi{
+  display: flex !important;
+  justify-content: flex-end;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.qtty{
+  background-color: rgb(74, 255, 246) !important;
+color: rgb(205, 135, 22);
+padding:0px 10px  !important;
+  text-align: center !important;
+  font-size: 25px !important;
+  font-weight: 500;
+width:60px !important;
+
+}
+.card{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+.tit{
+ color: transparent;
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  background-image: linear-gradient(45deg, rgba(203, 74, 233, 0.36) 0%, rgba(203, 74, 233, 0.36) 23%,rgba(229, 51, 239, 0.36) 23%, rgba(229, 51, 239, 0.36) 26%,rgba(151, 120, 220, 0.36) 26%, rgba(151, 120, 220, 0.36) 30%,rgba(73, 189, 202, 0.36) 30%, rgba(73, 189, 202, 0.36) 33%,rgba(99, 166, 208, 0.36) 33%, rgba(99, 166, 208, 0.36) 37%,rgba(255, 28, 245, 0.36) 37%, rgba(255, 28, 245, 0.36) 61%,rgba(177, 97, 227, 0.36) 61%, rgba(177, 97, 227, 0.36) 63%,rgba(125, 143, 214, 0.36) 63%, rgba(125, 143, 214, 0.36) 100%),linear-gradient(45deg, rgba(21, 202, 234, 0.37) 0%, rgba(21, 202, 234, 0.37) 12.5%,rgba(31, 119, 182, 0.37) 12.5%, rgba(31, 119, 182, 0.37) 25%,rgba(28, 147, 199, 0.37) 25%, rgba(28, 147, 199, 0.37) 37.5%,rgba(38, 64, 147, 0.37) 37.5%, rgba(38, 64, 147, 0.37) 50%,rgba(41, 37, 130, 0.37) 50%, rgba(41, 37, 130, 0.37) 62.5%,rgba(18, 229, 251, 0.37) 62.5%, rgba(18, 229, 251, 0.37) 75%,rgba(25, 174, 216, 0.37) 75%, rgba(25, 174, 216, 0.37) 87.5%,rgba(34, 92, 165, 0.37) 87.5%, rgba(34, 92, 165, 0.37) 100%),linear-gradient(248deg, rgb(197, 70, 212),rgb(40, 42, 210));
+  background-clip: text;
+}
+
+.pri{
+  display: flex !important;
+  justify-content: flex-end;
+}
+.val{
+  width:100px !important;
+  text-align: center  ;
+  background-color: rgb(245, 213, 172) ;
+  border: 1px solid;
+  color: rgb(255, 0, 25);
+  margin: 2px ;
+  font-weight: 800;
+  font-size: larger;
+}
+.btn:hover{
+  border:4px solid rgb(0, 255, 183) !important;
+  font-size: large !important;
+
+}
+.btn{
+  color: rgb(250, 246, 215);
+  padding: 0px 10px !important;
+  font-size: 25px !important;
+text-align: center !important;
+  background-color: rgb(0, 199, 119) !important;
+}
+.rmv{
+  background-color: brown;
+  border-radius: 10px !important;
+  padding:3px 10px !important;
+  color: wheat;
+}
+.rmv:hover{
+  border: 5px solid rgb(253, 4, 4) !important;
+  /* color:rgb(0, 255, 251) !important; */
+  font-size: 16px !important;
+  font-weight: bolder !important;
+}
+.tot{
+  width:100px !important;
+  text-align: center  ;
+  background-color: rgb(192, 222, 135) ;
+  border: 1px solid;
+  color: rgb(238, 124, 11);
+  margin: 2px ;
+}
