@@ -61,29 +61,23 @@ return(
 <div key={index} className="card sm-3 "  >
   <div className="row g-0">
     <div className="col-sm-3">
-    <div key={ele.id} id={ele.id} className="carousel slide carouselExampleAutoplaying" data-bs-ride="carousel">
-  <div className="carousel-inner  bg-black">
-        {ele.images.map((e,ind)=>{
-            return(
-                <div key={ind}>     
-   {
-    (ind===0) ?
-    <div className="carousel-item active">
-<img src={e} className="d-block" alt="..." width="100%" height='300'/>
-</div>:
-<div className="carousel-item ">
-
-<img src={e} className="d-block" alt="..." width='100%' height='300' />
-</div> 
-   }        
-       </div>
-            )
-        })
-            
-            }
-</div>
-
-</div>
+    <div id={`carousel-${ele.id}`} className="carousel slide" data-bs-ride="carousel">
+                            <div className="carousel-inner">
+                                {ele.images.map((image, index) => (
+                                    <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                                        <img src={image} height='300' className="d-block w-100" alt={`Slide ${index}`} />
+                                    </div>
+                                ))}
+                            </div>
+                            <button className="carousel-control-prev" type="button" data-bs-target={`#carousel-${ele.id}`} data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" data-bs-target={`#carousel-${ele.id}`} data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
+                        </div>
         
     </div>
     <div className="col-sm-8 ">
